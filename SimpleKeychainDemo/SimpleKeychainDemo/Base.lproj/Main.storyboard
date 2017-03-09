@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sc6-WY-QXm">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSZ-9l-IUX">
+                                <color key="backgroundColor" red="0.83529411760000005" green="0.83529411760000005" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="K8c-gc-D7u"/>
+                                </constraints>
+                                <state key="normal" title="write"/>
+                                <connections>
+                                    <action selector="writeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zGP-24-jZI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crU-w2-Ups">
+                                <color key="backgroundColor" red="0.83529411760000005" green="0.83529411760000005" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="read"/>
+                                <connections>
+                                    <action selector="readAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ac-IT-CBn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gSZ-9l-IUX" firstAttribute="leading" secondItem="Sc6-WY-QXm" secondAttribute="leading" id="4cQ-z5-OQd"/>
+                            <constraint firstItem="crU-w2-Ups" firstAttribute="leading" secondItem="gSZ-9l-IUX" secondAttribute="trailing" constant="20" id="69K-XY-hMt"/>
+                            <constraint firstItem="crU-w2-Ups" firstAttribute="centerY" secondItem="gSZ-9l-IUX" secondAttribute="centerY" id="A5A-w6-i3r"/>
+                            <constraint firstItem="crU-w2-Ups" firstAttribute="width" secondItem="gSZ-9l-IUX" secondAttribute="width" id="Crd-Ic-LeJ"/>
+                            <constraint firstItem="gSZ-9l-IUX" firstAttribute="top" secondItem="Sc6-WY-QXm" secondAttribute="bottom" constant="40" id="ROU-qI-ZPQ"/>
+                            <constraint firstItem="Sc6-WY-QXm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="fYh-NJ-EPu"/>
+                            <constraint firstItem="Sc6-WY-QXm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4i-gm-d9U"/>
+                            <constraint firstItem="crU-w2-Ups" firstAttribute="height" secondItem="gSZ-9l-IUX" secondAttribute="height" id="m4f-Je-wVL"/>
+                            <constraint firstItem="Sc6-WY-QXm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="vGI-Ka-gkO"/>
+                            <constraint firstItem="crU-w2-Ups" firstAttribute="trailing" secondItem="Sc6-WY-QXm" secondAttribute="trailing" id="zva-uZ-m1j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="usernameTF" destination="Sc6-WY-QXm" id="fyi-Es-Saw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
